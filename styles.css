@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.login-container {
+    margin-top: 100px;
+}
+
+/* Center the login container */
+.center-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
