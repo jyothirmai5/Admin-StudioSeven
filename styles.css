@@ -1,15 +1,37 @@
 body {
     font-family: Arial, sans-serif;
 }
- 
+
 #login {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
- 
+
 #dashboard {
     padding: 40px 0;
+}
+
+
+.bg-login-image {
+    background: url(src/assets/shiba1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.bg-password-image {
+    background: url(src/assets/shiba2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.bg-register-image {
+    background: url(src/assets/shiba3.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
