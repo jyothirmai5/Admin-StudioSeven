@@ -2364,8 +2364,8 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #2e59d9;
-  border-color: #2653d4;
+  background-color: #d46a00;
+  border-color: #d46a00;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -10866,19 +10866,19 @@ a:focus {
 }
 
 .bg-login-image {
-  background: url("https://source.unsplash.com/K4mSJ7kc0As/600x800");
+  background: url(../src/assets/shiba1.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
+  background: url(../src/assets/shiba2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+  background: url(../src/assets/shiba3.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -10889,31 +10889,29 @@ form.user .custom-checkbox.small label {
 
 form.user .form-control-user {
   font-size: 0.8rem;
-  border-radius: 10rem;
   padding: 1.5rem 1rem;
 }
 
 form.user .btn-user {
   font-size: 0.8rem;
-  border-radius: 10rem;
   padding: 0.75rem 1rem;
 }
 
 .btn-google {
-  color: #fff;
-  background-color: #ea4335;
-  border-color: #fff;
+  color: #3b5998;
+  background-color: #fff;
+  border-color: #3b5998;
 }
 
 .btn-google:hover {
   color: #fff;
-  background-color: #e12717;
+  background-color: #DB0028;
   border-color: #e6e6e6;
 }
 
 .btn-google:focus, .btn-google.focus {
   color: #fff;
-  background-color: #e12717;
+  background-color: #fff;
   border-color: #e6e6e6;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
@@ -10937,9 +10935,9 @@ form.user .btn-user {
 }
 
 .btn-facebook {
-  color: #fff;
-  background-color: #3b5998;
-  border-color: #fff;
+  color: #3b5998;
+  background-color: #fff;
+  border-color: #3b5998;
 }
 
 .btn-facebook:hover {
