@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -2694,14 +2695,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #DB9B00;
+  border-color: #DB9B00;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #2e59d9;
-  border-color: #2653d4;
+  background-color: #d46a00;
+  border-color: #d46a00;
 }
 
 .btn-primary:focus,
@@ -2715,16 +2716,16 @@ fieldset:disabled a.btn {
 .btn-primary.disabled,
 .btn-primary:disabled {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #DB9B00;
+  border-color: #DB9B00;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled).active,
 .show>.btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #2653d4;
-  border-color: #244ec9;
+  background-color: #DB9B00;
+  border-color: #DB9B00;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus,
@@ -3668,12 +3669,14 @@ input[type="button"].btn-block {
   z-index: 1;
 }
 
-.btn-group>.btn:focus,
-.btn-group>.btn:active,
-.btn-group>.btn.active,
-.btn-group-vertical>.btn:focus,
-.btn-group-vertical>.btn:active,
-.btn-group-vertical>.btn.active {
+.btn btn-primary btn-user btn-block{
+  background-color: #DB9B00;
+}
+
+.btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
+.btn-group-vertical > .btn:focus,
+.btn-group-vertical > .btn:active,
+.btn-group-vertical > .btn.active {
   z-index: 1;
 }
 
@@ -12102,16 +12105,20 @@ a:focus {
   }
 }
 
-
+.bg-login-image {
+  background: url(../src/assets/shiba1.jpg);
+  background-position: center;
+  background-size: cover;
+}
 
 .bg-register-image {
-  background: url("https://source.unsplash.com/Mv9hjnEUHR4/600x800");
+  background: url(../src/assets/shiba2.jpg);
   background-position: center;
   background-size: cover;
 }
 
 .bg-password-image {
-  background: url("https://source.unsplash.com/oWTW-jNGl9I/600x800");
+  background: url(../src/assets/shiba3.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -12122,32 +12129,30 @@ form.user .custom-checkbox.small label {
 
 form.user .form-control-user {
   font-size: 0.8rem;
-  border-radius: 10rem;
   padding: 1.5rem 1rem;
 }
 
 form.user .btn-user {
   font-size: 0.8rem;
-  border-radius: 10rem;
   padding: 0.75rem 1rem;
 }
 
 .btn-google {
-  color: #fff;
-  background-color: #ea4335;
-  border-color: #fff;
+  color: #3b5998;
+  background-color: #fff;
+  border-color: #3b5998;
 }
 
 .btn-google:hover {
   color: #fff;
-  background-color: #e12717;
+  background-color: #DB0028;
   border-color: #e6e6e6;
 }
 
 .btn-google:focus,
 .btn-google.focus {
   color: #fff;
-  background-color: #e12717;
+  background-color: #fff;
   border-color: #e6e6e6;
   box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
 }
@@ -12174,9 +12179,9 @@ form.user .btn-user {
 }
 
 .btn-facebook {
-  color: #fff;
-  background-color: #3b5998;
-  border-color: #fff;
+  color: #3b5998;
+  background-color: #fff;
+  border-color: #3b5998;
 }
 
 .btn-facebook:hover {
