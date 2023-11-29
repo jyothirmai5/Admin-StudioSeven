@@ -10,6 +10,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
 :root {
   --blue: #4e73df;
   --indigo: #6610f2;
@@ -2357,8 +2358,8 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #DB9B00;
+  border-color: #DB9B00;
 }
 
 .btn-primary:hover {
@@ -2376,15 +2377,15 @@ fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
-  background-color: #4e73df;
-  border-color: #4e73df;
+  background-color: #DB9B00;
+  border-color: #DB9B00;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #2653d4;
-  border-color: #244ec9;
+  background-color: #DB9B00;
+  border-color: #DB9B00;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -3251,6 +3252,10 @@ input[type="button"].btn-block {
 .btn-group > .btn:hover,
 .btn-group-vertical > .btn:hover {
   z-index: 1;
+}
+
+.btn btn-primary btn-user btn-block{
+  background-color: #DB9B00;
 }
 
 .btn-group > .btn:focus, .btn-group > .btn:active, .btn-group > .btn.active,
