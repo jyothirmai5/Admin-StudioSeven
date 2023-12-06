@@ -5,7 +5,7 @@ $(document).ready(function () {
         if (!isValidEmail(enteredUsername)) {
             $("#emailError").text("Invalid email address");
             if (!isValidPassword(enteredPassword)) {
-                $("#passwordError").text("Password must be 6-8 characters with 1 uppercase and 1 special character");
+                $("#passwordError").text("Password must be 6-12 characters with 1 uppercase and 1 special character");
                 return;
             } else {
                 $("#passwordError").text("");
@@ -34,7 +34,9 @@ $(document).ready(function () {
 
 
     });
-
+    $('#googleModal').on('show.bs.modal', function () {
+        $(this).find('.modal-dialog').removeAttr('style');
+    });
     $('#logout-btn').on('click', function () {
         clearLocalStorage();
         window.location.href = 'index.html';

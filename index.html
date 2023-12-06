@@ -74,10 +74,12 @@
                                             Login
                                         </a>
                                         <hr>
-                                        <a href="index.html" class="btn btn-google btn-user btn-block">
+                                        <a href="index.html" class="btn btn-google btn-user btn-block"
+                                            data-toggle="modal" data-target="#googleModal">
                                             <i class="fab fa-google fa-fw"></i> Login with Google
                                         </a>
-                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                        <a href="index.html" class="btn btn-facebook btn-user btn-block"
+                                            data-toggle="modal" data-target="#facebookModal">
                                             <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                                         </a>
                                     </form>
@@ -97,21 +99,71 @@
         </div>
 
     </div>
-    <div class="modal" tabindex="-1" role="dialog" id="invalidPasswordModal">
+    <!-- Google Modal -->
+    <div class="modal fade" id="googleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">Required fields</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">SSO</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Invalid username or password. Please try again.</p>
+                    <div class="container custom-google-signin-form">
+                        <form>
+                            <div class="form-group text-center">
+                                <h2>Sign in with Google</h2>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail">Email address</label>
+                                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
+                                    placeholder="Enter email">
+                            </div>
+                            <button type="button" class="btn btn-primary custom-google-signin-button">Sign in with
+                                Google</button>
+                            <div class="custom-google-signin-divider">or</div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-secondary btn-block">Sign in with Email</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+    <!-- Facebook Modal -->
+    <div class="modal fade custom-animated-modal" id="facebookModal" tabindex="-1" role="dialog"
+        aria-labelledby="facebookModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="facebookModalLabel">Custom Animated Dialog</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
+                <div class="modal-body">
+                    <!-- Facebook SSO Login Form -->
+                    <div class="container login-container">
+                        <h2 class="text-center mb-4">Facebook SSO Login</h2>
+                        <form id="facebookLoginForm">
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block btn-facebook">Login with
+                                Facebook</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- You can add additional content or buttons in the modal footer if needed -->
             </div>
         </div>
     </div>
