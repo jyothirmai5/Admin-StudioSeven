@@ -26,6 +26,11 @@
 </head>
 
 <body class="bg-gradient-primary">
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div id="loading-spinner"></div>
+    </div>
+
 
     <div class="container">
 
@@ -38,7 +43,9 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+                            <div class="col-lg-6 d-none d-lg-block image-container" id="zoom-container">
+                                <img class="bg-login-image" src="./src/assets/shiba1.jpg" alt="Shiba1">
+                            </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
@@ -108,7 +115,10 @@
             </div>
         </div>
     </div>
+
     <script src="./js/auth.js"></script>
+  
+
 </body>
 
 </html>
