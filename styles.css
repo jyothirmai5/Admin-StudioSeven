@@ -4,6 +4,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.bg-gradient-primary {
+    background-color: #4e73df;
+    background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+    background-size: cover;
+}
+
 #login {
     display: flex;
     justify-content: center;
@@ -15,3 +21,94 @@ body {
     padding: 40px 0;
 }
 
+.bg-login-image {
+    background: url(../src/assets/shiba1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-register-image {
+    background: url(../src/assets/shiba2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-password-image {
+    background: url(../src/assets/shiba3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #DB9B00;
+    border-color: #DB9B00;
+}
+
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #d46a00;
+    border-color: #d46a00;
+}
+
+.btn-google {
+    color: #3b5998;
+    background-color: #fff;
+    border-color: #3b5998;
+}
+
+.btn-google:hover {
+    color: #fff;
+    background-color: #DB0028;
+    border-color: #e6e6e6;
+}
+
+.btn-google:focus,
+.btn-google.focus {
+    color: #fff;
+    background-color: #fff;
+    border-color: #e6e6e6;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+}
+
+.btn-facebook {
+    color: #3b5998;
+    background-color: #fff;
+    border-color: #3b5998;
+}
+
+.btn-facebook:hover {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #DB9B00;
+}
+
+form.user .custom-checkbox.small label {
+    line-height: 1.5rem;
+}
+
+.navbar {
+    background-color: #4e73df;
+    color: #fff;
+}
+
+.search-bar {
+    margin: auto;
+}
+
+.input-group {
+    width: max-content;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
