@@ -10,6 +10,12 @@ body {
     background-size: cover;
 }
 
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
+    background-color: #d46a00;
+}
+
 #login {
     display: flex;
     justify-content: center;
@@ -111,4 +117,8 @@ form.user .custom-checkbox.small label {
 .card-img-top {
     height: 200px;
     object-fit: cover;
+}
+
+.error-message {
+    color: red;
 }
