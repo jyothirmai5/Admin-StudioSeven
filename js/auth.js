@@ -40,7 +40,31 @@ $(document).ready(function () {
         window.location.href = 'index.html';
     })
 
+    var initialScale = 1;
 
+    // Set up mouseenter event
+    $("#zoom-container").mouseenter(function() {
+        // Increase the scale on mouseover
+        $(".bg-login-image").css("transform", "scale(1.8)");
+    });
+
+    // Set up mouseleave event
+    $("#zoom-container").mouseleave(function() {
+        // Reset the scale on mouseout
+        $(".bg-login-image").css("transform", "scale(" + initialScale + ")");
+    });
+
+    // Get the initial scale value after the image has loaded
+    $(".bg-login-image").on("load", function() {
+        initialScale = $(this).width() / $("#zoom-container").width();
+    });
+    $("#loading-screen").fadeIn();
+    
+    // Simulate a delay (you can replace this with your actual loading logic)
+    setTimeout(function() {
+        // Hide the loading screen when your content is ready
+        $("#loading-screen").fadeOut();
+    }, 1000); // Adjust the delay time as needed
     // Function to validate email format
     function isValidEmail(email) {
         // Use a regular expression for basic email validation
