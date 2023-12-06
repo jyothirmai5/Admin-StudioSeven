@@ -122,3 +122,70 @@ form.user .custom-checkbox.small label {
 .error-message {
     color: red;
 }
+
+.custom-google-signin-form {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.custom-google-signin-button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    /* background-color: #4285f4; */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* .custom-google-signin-button:hover {
+    background-color: #357ae8;
+  } */
+
+.custom-google-signin-divider {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.custom-google-signin-divider::before,
+.custom-google-signin-divider::after {
+    content: "";
+    display: inline-block;
+    border-top: 1px solid #ccc;
+    width: 45%;
+    margin: 5px;
+}
+
+.login-container {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-facebook {
+    background-color: #1877f2;
+    color: #fff;
+}
+
+.btn-facebook:hover {
+    background-color: #115293;
+}
+
+@keyframes slideInFromBottom {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+
+  .custom-animated-modal .modal-dialog {
+    animation: slideInFromBottom 0.5s ease-in-out;
+  }
