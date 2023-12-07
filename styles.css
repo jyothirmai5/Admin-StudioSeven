@@ -122,3 +122,57 @@ form.user .custom-checkbox.small label {
 .error-message {
     color: red;
 }
+
+
+
+
+.shape {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    transform: scale(0.8);
+}
+
+.cir {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.btn-contain {
+    height: 100px;
+}
+
+.animation-btn {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    background-color: #DB9B00;
+    text-align: center;
+    z-index: 10;
+    transition: 0.2s;
+    cursor: pointer;
+    color: #fff;
+    box-shadow: 0px 1px 5px 2px #BFCEEF;
+}
+
+.animation-btn:active,
+.animation-btn:hover,
+.animation-btn:focus {
+    outline: none !important;
+    color: white;
+}
+
+.btn-particles {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 50%;
+    color: #eee;
+    font-family: monospace;
+    z-index: 1;
+    margin-top: -40px;
+}
+
