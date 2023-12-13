@@ -93,17 +93,49 @@ form.user .custom-checkbox.small label {
     line-height: 1.5rem;
 }
 
+.navbar-collapse {
+    margin-bottom: -20px;
+}
+
 .navbar {
-    background-color: #4e73df;
-    color: #fff;
+    height: 123px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 30px #00000029;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #111111;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0px 10px;
+    border-bottom: 2px solid transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .show>.nav-link {
+    color: #DB9B00;
+    font-size: 18px;
+    font-weight: 800;
+    border-bottom: 2px solid #DB9B00;
 }
 
 .search-bar {
     margin: auto;
 }
 
-.input-group {
-    width: max-content;
+.search-input-control {
+    border-radius: 50px;
 }
 
 .card {
@@ -118,9 +150,6 @@ form.user .custom-checkbox.small label {
 .error-message {
     color: red;
 }
-
-
-
 
 .shape {
     position: absolute;
@@ -223,6 +252,7 @@ form.user .custom-checkbox.small label {
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
+
 .custom-google-signin-form {
     max-width: 400px;
     margin: auto;
@@ -279,13 +309,14 @@ form.user .custom-checkbox.small label {
 
 @keyframes slideInFromBottom {
     from {
-      transform: translateY(100%);
+        transform: translateY(100%);
     }
-    to {
-      transform: translateY(0);
-    }
-  }
 
-  .custom-animated-modal .modal-dialog {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.custom-animated-modal .modal-dialog {
     animation: slideInFromBottom 0.5s ease-in-out;
-  }
+}
