@@ -329,3 +329,12 @@ form.user .custom-checkbox.small label {
 .card-body-dashboard{
     margin-top: 100px;
 }
+
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
