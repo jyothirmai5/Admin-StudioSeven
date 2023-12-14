@@ -320,3 +320,12 @@ form.user .custom-checkbox.small label {
 .custom-animated-modal .modal-dialog {
     animation: slideInFromBottom 0.5s ease-in-out;
 }
+
+
+
+/* category nav styling */
+
+
+.card-body-dashboard{
+    margin-top: 100px;
+}
